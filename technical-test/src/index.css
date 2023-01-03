@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --clr-sand: #f7e4cb;
+  --clr-softBlack: #0A121A;
+  --clr-olive:#4E6659;
+  --clr-white:#FFFFFF;
+  --clr-coral: #FF5E6F;
+  --ff-primary-body: Arial, Helvetica, sans-serif;
+  --ff-smartpointCloud-font: atls-default, sans-serif;
+  --ff-primary-headline: 'Impact', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
 }

@@ -1,12 +1,21 @@
 import './App.css'
-import ListElement from './Components/DataElements/index.jsx'
-import { data } from './Components/DataElements/Data.js'
+
+// import { legacy_createStore as createStore } from 'redux'
+// import { Provider } from 'react-redux'
+// import { UsersReducer } from './Components/reducers/UsersReduce'
+// import UsersList from './Components/UsersList'
+import Buttons from './Components/Button'
+
+// const store = createStore(UsersReducer)
 
 function App () {
   return (
-    data.map((user) =>
-      <ListElement key={user.email} props={user} />
-    )
+    // <Provider store={store}>
+    <>
+      {/* <UsersList /> */}
+      <Buttons />
+    </>
+    // </Provider>
   )
 }
 

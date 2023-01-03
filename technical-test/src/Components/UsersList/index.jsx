@@ -5,6 +5,7 @@ import {} from './styles'
 
 const UsersList = () => {
   const Users = useSelector((state) => state)
+  console.log(Users)
   return (
     Users.map((user) => (
       <UserElement key={user.email} props={user} />

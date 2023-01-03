@@ -4,7 +4,8 @@ export const UsersReducer = (state = [], action) => {
       return [...state, action.payload]
     }
     case 'delete_users': {
-      return []
+      state = []
+      return state
     }
     default: {
       return state
@@ -16,6 +17,6 @@ export const addUser = (user) => ({
   type: 'add_user',
   payload: user
 })
-export const deleteUser = () => ({
-  type: 'delete_user'
+export const deleteUsers = () => ({
+  type: 'delete_users'
 })

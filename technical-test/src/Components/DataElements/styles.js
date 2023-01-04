@@ -6,6 +6,9 @@ export const Element = styled.div`
     grid-template-rows: repeat(2, 1fr);
     padding: ${props => props.theme.sizes.rem06};
     align-self: center;
+    @media (min-width: 420px){
+        width: 30%;
+    }
 `
 
 export const Image = styled.img`

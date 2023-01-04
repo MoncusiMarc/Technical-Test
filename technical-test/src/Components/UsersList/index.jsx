@@ -1,15 +1,17 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import UserElement from '../UserElement'
-import {} from './styles'
+import { Flexbox } from './styles'
 
 const UsersList = () => {
   const Users = useSelector((state) => state)
   console.log(Users)
   return (
-    Users.map((user) => (
+    <Flexbox>
+    {Users.map((user) => (
       <UserElement key={user.email} props={user} />
-    ))
+    ))}
+    </Flexbox>
   )
 }
 

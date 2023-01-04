@@ -23,10 +23,8 @@ const Buttons = () => {
     }
   }
   return (
-    <Button
-      onClick={event => { handleClick(event) }}
-    >
-      Next
+    <Button onClick={event => { handleClick(event) }}>
+      NEXT
     </Button>
   )
 }

@@ -1,9 +1,9 @@
 import './styles'
 import { legacy_createStore as createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { UsersReducer } from '../Components/reducers/UsersReduce'
-import UsersList from '../Components/UsersList'
-import Buttons from '../Components/Button'
+import { UsersReducer } from '../reducers/UsersReduce'
+import UsersList from '../UsersList'
+import Buttons from '../Button'
 
 const store = createStore(UsersReducer)
 

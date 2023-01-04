@@ -5,7 +5,6 @@ import { Flexbox } from './styles'
 
 const UsersList = () => {
   const Users = useSelector((state) => state)
-  console.log(Users)
   return (
     <Flexbox>
     {Users.map((user) => (

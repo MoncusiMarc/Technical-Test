@@ -1,14 +1,18 @@
-import { Flexbox } from './styles'
-import ListElement from '../DataElements/index'
-import { data } from '../DataElements/Data'
+import './styles'
+import { legacy_createStore as createStore } from 'redux'
+import { Provider } from 'react-redux'
+import { UsersReducer } from '../reducers/UsersReduce'
+import UsersList from '../UsersList'
+import Buttons from '../Button'
+
+const store = createStore(UsersReducer)
 
 function App () {
   return (
-    <Flexbox>
-    {data.map((user) =>
-      <ListElement key={user.email} props={user} />
-    )}
-    </Flexbox>
+    <Provider store={store}>
+      <UsersList />
+      <Buttons />
+    </Provider>
   )
 }
 

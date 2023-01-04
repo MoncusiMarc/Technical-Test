@@ -1,7 +1,7 @@
 import React from 'react'
 import { Element, Image, Name, Email } from './styles'
 
-const ListElement = ({ props }) => {
+const UserElement = ({ props }) => {
   const picture = props.picture.medium
   const name = props.name.first + ' ' + props.name.last
   const email = props.email
@@ -14,4 +14,4 @@ const ListElement = ({ props }) => {
   )
 }
 
-export default ListElement
+export default UserElement

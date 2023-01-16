@@ -7,7 +7,7 @@ export const Element = styled.div`
     padding: ${props => props.theme.sizes.rem06};
     align-self: center;
     @media (min-width: 420px){
-        width: 30%;
+        width: 33%;
     }
 `
 
@@ -18,7 +18,8 @@ export const Image = styled.img`
 export const Name = styled.p`
     align-self: center;
     text-align: center;
-    font-weight: ${props => props.theme.fontWeight.bold}
+    font-family: ${props => props.theme.fonts.headings};
+    font-weight: ${props => props.theme.fontWeight.bold};
 `
 
 export const Email = styled.p`

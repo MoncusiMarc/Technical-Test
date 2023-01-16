@@ -6,9 +6,14 @@ export const Button = styled.button`
         height:60px;
         bottom:40px;
         right:40px;
-        background-color:#0C9;
-        color:#FFF;
+        font-family. ${props => props.theme.fonts.heading};
+        background-color: ${props => props.theme.colors.olive};
+        color: ${props => props.theme.colors.white};
         border-radius:50px;
         text-align:center;
-        box-shadow: 2px 2px 3px #999;
+        box-shadow: 2px 2px 3px ${props => props.theme.colors.softBlack};
+
+        &:active {
+                transform: translateY(1px);
+            }
 `

@@ -18,7 +18,7 @@ function RequestAPI() {
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
-    client.get("/?results=5").then((response) => {
+    client.get("/?results=6").then((response) => {
       setPost(response.data);
     });
   }, []);
